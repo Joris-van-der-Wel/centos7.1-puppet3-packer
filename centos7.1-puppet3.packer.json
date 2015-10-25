@@ -52,7 +52,9 @@
         "sudo yum -y install puppet",
         "sudo mkdir -p /var/lib/puppet/state/graphs/",
         "echo === Clean up yum ===",
-        "sudo yum clean all"
+        "sudo yum clean all",
+        "echo === Remove ssh host key ===",
+        "sudo rm /etc/ssh/ssh_host_* || true"
       ]
     }
   ],
